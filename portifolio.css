@@ -1,0 +1,235 @@
+* {  /* Reset de margin e paddings do site que vem por padrão do browser */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ /* Foi utilizado principalmente o bootstrap pra responsividade e o flex box do proprio css em alguns casos */
+
+
+/*-----------MAIN---------------- */
+
+.conteiner-main {  /* Definindo um conteiner de  100% da tela para os elementos*/
+    width: 100%;
+    height: 100%;
+    display: flex;  
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.subconteiner-main {
+    width: 100%;
+    padding: 30px;
+}
+
+
+.subconteiner-main h1{
+    color: #A129FF;
+    font-size: 50px;
+}
+
+.subconteiner-main h3{
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.subconteiner-main p{
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.subconteiner-buttons {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.subconteiner-buttons button{
+    width: 160px;
+    height: 50px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.first-button {
+    background-color: #A129FF;
+    font-size: 18px;
+    color: white;
+    border-color: #A129FF;
+}
+
+.second-button {
+    background-color: black;
+    border-color: white;
+    font-size: 18px;
+    color: white;
+    
+}
+
+/* SECTION FRASE*/
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url(./Imgs/backgroundFrase.jpg);
+    background-size: cover;
+   
+}
+
+.section blockquote {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.section blockquote p  {
+    align-items: center;
+    color: rgb(221, 212, 212);
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.section blockquote h1  {
+    align-items: center;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(221, 212, 212);
+}
+
+
+
+/* -------------SOBRE MIM------------ */
+
+.conteiner-sobre-mim {
+    min-height: 300px;
+}
+
+.sub-conteiner-sobre {
+    min-height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+}
+
+.sub-conteiner-sobre h1{
+    margin: 0px 0 30px 0;
+}
+
+.sub-conteiner-sobre h5{
+    margin: 0 0 0 0;
+}
+
+
+.sub-conteiner-sobre p{
+    text-align: justify;
+
+}
+
+
+/* ------------------ FORMAÇÃO ---------------------- */
+
+.sub-conteiner-formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.sub-conteiner-formacao h1{
+    margin: 40px 0 30px 0;
+    text-align: center;
+}
+
+.titulos {
+    margin-top: 10px;
+}
+
+
+.sub-conteiner-formacao p{
+    margin: 10px 0;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+/* ---------------PORTIFOLIO---------------- */
+
+.conteiner-portifolio {
+    min-height: 400px;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.h1-port {
+ margin: 30px 0 40px 0px;
+ 
+}
+
+.conteudo-port {
+    height: 30vh;
+    margin: 20px 20px 40px 20px;
+
+}
+
+
+/* ----------footer---------- */
+
+.footer {
+
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.conteiner-footer {
+
+    height: 100%;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-contato {
+
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #A129FF;
+}
+
+.lista-contato li{
+    list-style: none;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.lista-contato a{
+    color: #A129FF;
+}

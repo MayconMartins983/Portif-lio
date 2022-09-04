@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portifolio.css"> <!--Folha de estilo do proprio projeto -->
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css"> <!--folha de estilo do bootstrap -->
+   <title>Portifólio Maycon</title> <!-- Nome do projeto -->
+</head>
+<body>
+
+<div class="row">
+    <!-- -----------------------------Aqui está o header que é o cabeçário da página------------------------------------- -->
+
+    <header>
+        <nav class="navbar navbar-expand-xs bg-light mx-5"> <!-- Barra de navegaçaõ do site, semânticamente anotado com nav  -->
+            <a class="navbar-brand" href="/">Portifólio Maycon</a>
+            
+            <!-- Menu hamburguer utilizado através do bootstrap -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse header-interno " id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#sobreMimId">Sobre Mim</a>
+                    <a class="nav-link" href="#formacaoId">Formação</a>
+                    <a class="nav-link" href="#portifolio">Portifólio</a>
+                    <a class="nav-link"  href="#contato">Contato</a>
+                </div>
+
+        </div>
+        </nav>
+    </header>
+
+<!-- -----------------------------Aqui esta a parte principal do site, semânticamente anotado com o main dentro do conteiner------------------------------------- -->
+
+    <div class="conteiner-main">
+        <main class="main">
+            <div class="subconteiner-main ">
+                <h3>Olá me chamo Maycon Martins</h3>
+                <h1>Sou Desenvolvedor Back-End Júnior</h1>
+                <p>Atualmente trabalho com desenvolvimento de web-services utlizando o ecossistema Spring, Java e Microservices.</p>
+            </div>
+            <div class="subconteiner-buttons">
+                <button type="button" class="btn btn-info" id="button-port">Portifólio</button>
+                <button type="button" class="btn btn-info" id="button-contato">Contato</button>
+            </div>            
+        </main>
+    </div>
+
+    <section class="section ">
+        <blockquote> <!-- blockquote é uma tag sematica para citações-->
+            <h1>Ser desenvolvedor é uma viagem onde a próxima parada é a solução de um problema.</h1>
+            <p>Thales Valentim</p>
+        </blockquote>
+        
+    </section>
+
+<!-- -----------------------------Aqui está uma section do site, semânticamente anotado com section------------------------------------- -->
+
+    <section class="row conteiner-sobre-mim " >
+
+        <div class="sub-conteiner-formacao sub-conteiner-formacao col-lg-12 col-md-12 col-sm-12 col-xs-12"> <!-- As classes com col... que estaram de agora em diante, são colunas responsivas fornecidades pelo bootstrap -->
+            <h1 id="sobreMimId">Sobre mim</h1>
+            <p class="col-lg-10 col-md-10 col-sm-10 col-xs-10">Olá me chamo Maycon tenho 24 anos, sou morador de Formosa-GO. Comecei minha primeira faculdade em 2016, no curso de gestão de Agronegócios
+                , adquiri conhecimentos nas áreas de administração, gestão de empresas e de pessoas, contabilidade e etc. Em 2021 decidi fazer uma transição
+                de carreira, indo para a área que eu sempre gostei e amei, que é a imensa área de Ti. Desde então, decidi não perder mais tempo e comecei a estudar primeiramente
+                front-end com HTML, CSS, Javascript e React-JS, realizei diversos projetos pessoais como pode ser visto na aba portifólio. Depois de uns 8 meses de estudo, decidi
+                conhecer um pouco mais sobre o back-end e descobri que ali estava minha vocação. Comecei com C# e .NET e poucos meses depois passei a estudar Java, que me rendeu 
+                meu primeiro emprego alguns meses depois. Atualmente trabalho criando e dando manutenção em um sistema de telefonia, utilizando as tecnologias: Java, Ecossistema Spring
+                , Microservices, Docker, Mensageria, Oracle Database, Elastic Search e Redis.
+            </p>
+        </div>
+
+    </section>
+
+<!-- -----------------------------Aqui é a section de formação------------------------------------- -->
+
+    <section class="row conteiner-sobre-mim" >
+        <div class="sub-conteiner-formacao sub-conteiner-formacao col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 id="formacaoId">Minha Formação</h1>
+            <h5 class="titulos"><li>Análise e desenvolvimento de Sistemas - UNINTER - 3/5 semestres</li></h5>
+            <p class="col-lg-10 col-md-10 col-sm-10 col-xs-10">Estou cursando ADS na Uninter, onde o curso é focado principalmente em desenvolver o estudante em diversas áreas da tecnologia da informação, sendo algumas delas:
+            Fundamentos computacionais, infraestrutura de redes, gestão de TI, desenvolvimento web e análise e modelagem de arquiteturas completas como monolítos
+            ou sistemas distribuídos, utilizando os principais design patterns e boas práticas que elevam o nível de maturidade da aplicação, para que seja possível escalar
+                determinados serviços futuramente da melhor forma possível e dentro dos menores custos.
+            </p>
+
+            <h5 class="titulos"><li>Gestão de Agronegócios - Universidade de Brasília - 2016/2022</li></h5>
+            <p class="col-lg-10 col-md-10 col-sm-10 col-xs-10">Estou no último semestre deste curso, que nos prepara como profissionais para atuar em uma das maiores áreas de produção do Brasil, que é o agronegócio,
+            que envolve a administração das áreas de cultivos, da criação de gado de corte, da criação de vaca leiteira, e tudo que envolve o ambiente de produção. 
+            Grande parte do curso são matérias de administração, contabilidade, direito e estatística, que nos faz profissionais competentes para a área de gestão por completo.
+            </p>
+        </div>
+    </section>
+
+<!-- -----------------------------Aqui é a section de Portifólio------------------------------------- -->
+
+    <section class="row conteiner-portifolio d-flex justify-content-center" >
+            <h1 class="text-center h1-port" id="portifolio">Portifólio</h1>
+            <div class="conteudo-port col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <h5>Cadastro e exibição de Pontos Turísticos</h5>
+                <p >Este foi meu primeiro projeto pessoal Full-Stack, onde utilizei React-Js para o desenvolvimento do front-end e C# com .NET para o desenvolvimento do Back-End, além do SQL Server como banco de dados.
+                    Nele é possível cadastrar, listar e filtrar os pontos turísticos. Foi feito também a paginação dos dados para maior otimização, buscando melhorar a experiencia do usuário.
+                </p>
+                <p><a href="https://github.com/MayconMartins983/ListagensPontosTuristicos">Clique aqui para acessar</a></p>
+            </div>
+
+            <div class="conteudo-port col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                <h5>CRUD Clientes</h5>
+                <p>Este é um projeto Full-Stack utilizando React-JS no front e C# com .NET o Back-End, além do SQl Server como banco de dados, é possível salvar, listar, atualizar e excluir clientes do sistema. 
+                </p>
+                <p><a href="https://github.com/MayconMartins983/CRUD-com-ASP_Net-e-React-Js">Clique aqui para acessar</a></p>
+            </div>
+
+            <div class="conteudo-port col-lg-5 col-md-5 col-sm-12 col-xs-12 mt-5">
+                <h5>Consumo de API em GraphQL com React-JS</h5>
+                <p>Este é um projeto que foi feito com um amigo, onde fiz o consumo da API, utilizando a biblioteca AXIOS. Foi utilizado: componentização para reutilização,
+                    troca de informações entre componentes, React-Router e Manipulação de estados.
+                </p>
+                <p><a href="https://github.com/MayconMartins983/GamePls">Clique aqui para acessar</a></p>
+            </div>
+
+            <div class="conteudo-port col-lg-5 col-md-5 col-sm-12 col-xs-12 mt-5">
+                <h5>Player de Musica em Javascript</h5>
+                <p>Este é um projeto que foi feito em javascript, onde é possível mudar a faixa da musica e pausar.
+                </p>
+                <p><a href="https://github.com/MayconMartins983/Music-Player">Clique aqui para acessar</a></p>
+            </div>
+    </section>
+
+<!-- -----------------------------Aqui é a section de Footer------------------------------------- -->
+
+    <footer class="row footer">
+        <ul class="lista-contato row" id="contato">
+            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="https://www.linkedin.com/in/maycon-martins-b80743216/">Linkedin</a></li>
+            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">Email: maycon.rocha2100@gmail.com</li>
+            <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="https://github.com/MayconMartins983?tab=repositories  ">Github</a></li>
+        </ul>      
+    </footer>
+</div>
+    
+    <script src="./Bootstrap/bootstrap.min.js"></script> <!-- Aqui é o script do bootstrap -->
+    <script src="https://kit.fontawesome.com/cee014c7a0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script> <!-- Aqui é o script do javascript-->
+</body>
+</html>
