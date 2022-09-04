@@ -28,7 +28,6 @@
                     <a class="nav-link" href="#sobreMimId">Sobre Mim</a>
                     <a class="nav-link" href="#formacaoId">Formação</a>
                     <a class="nav-link" href="#portifolio">Portifólio</a>
-                    <a class="nav-link"  href="#contato">Contato</a>
                 </div>
 
         </div>
@@ -46,7 +45,7 @@
             </div>
             <div class="subconteiner-buttons">
                 <button type="button" class="btn btn-info" id="button-port">Portifólio</button>
-                <button type="button" class="btn btn-info" id="button-contato">Contato</button>
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Contato</button>
             </div>            
         </main>
     </div>
@@ -142,6 +141,35 @@
         </ul>      
     </footer>
 </div>
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email: </label>
+              <input type="email" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
     <script src="./Bootstrap/bootstrap.min.js"></script> <!-- Aqui é o script do bootstrap -->
     <script src="https://kit.fontawesome.com/cee014c7a0.js" crossorigin="anonymous"></script>
